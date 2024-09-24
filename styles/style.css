@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fbebe9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: #cfb9ac;
+    margin: 0; /* Remove qualquer margem */
+    padding: 0; /* Opcional, se você também quiser remover o preenchimento */
+}
+
+h1 {
+    text-align: center;
+    color: #998980;
+    font-weight: bold;
+}
+
+h2 {
+    color: #909090;
+    text-align: center;
+}
+
+.imagem-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a linha seguinte se não houver espaço */
+    justify-content: center; /* Centraliza as imagens */
+}
+
+img {
+    width: 100%;
+    max-width: 150px; /* Limite de largura para as imagens */
+    height: auto;
+    margin: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #cfb9ac;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ab9083;
+}
+
+/* Estilo para o formulário */
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #998980;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; /* Isso empurra o footer para o fim da página */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+/* Media queries para responsividade */
+@media (max-width: 600px) {
+    img {
+        max-width: 100%; /* Permite que as imagens se ajustem à tela menor */
+    }
+
+    button {
+        width: 100%; /* Botões ocupam toda a largura em telas menores */
+        margin: 5px 0; /* Ajusta o espaçamento dos botões */
+    }
+}
